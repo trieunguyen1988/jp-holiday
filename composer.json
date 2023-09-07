@@ -1,0 +1,23 @@
+{
+    "name": "jp-holiday/jp-holiday",
+    "description": "Japanese holidays",
+    "keywords": ["date", "holiday"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrieuNN",
+            "homepage": "https://github.com/trieunguyen1988",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">= 5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0",
+        "symfony/yaml": ">=2.4.0"
+    },
+    "autoload": {
+        "psr-4": { "JpHoliday\\": "src/" }
+    }
+}
