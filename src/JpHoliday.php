@@ -2,7 +2,7 @@
 
 namespace JpHoliday;
 
-use JpHoliday\JpHoliday\Holidays;
+use JpHoliday\JpHoliday\JpHolidays;
 use DateTime;
 
 class JpHoliday
@@ -20,7 +20,7 @@ class JpHoliday
         $seleted = array();
         $start = self::format($start);
         $last = self::format($last);
-        foreach (Holidays::$holidays as $date => $value) {
+        foreach (JpHolidays::$holidays as $date => $value) {
             $d = new DateTime($date);
             if ($start <= $d && $d <= $last) {
                 $value['date'] = $d;
@@ -32,6 +32,6 @@ class JpHoliday
 
     public static function isHoliday(DateTime $date)
     {
-        return array_key_exists($date->format('Y-m-d'), Holidays::$holidays);
+        return array_key_exists($date->format('Y-m-d'), JpHolidays::$holidays);
     }
 }

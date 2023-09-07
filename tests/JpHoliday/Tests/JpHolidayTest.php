@@ -15,7 +15,7 @@ class JpHolidayTest extends TestCase
      *
      */
     public function test_holidays() {
-        $this->assertEquals(JpHoliday\Holidays::$holidays['1973-04-30']['name'], '天皇誕生日 振替休日');
+        $this->assertEquals(JpHoliday\JpHolidays::$holidays['1973-04-30']['name'], '天皇誕生日 振替休日');
     }
 
     /**
