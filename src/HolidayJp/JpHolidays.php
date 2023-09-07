@@ -6,7 +6,7 @@ namespace JpHoliday\JpHoliday;
  * Holidays
  *
  */
-class Holidays
+class JpHolidays
 {
 
     public static $holidays = array(

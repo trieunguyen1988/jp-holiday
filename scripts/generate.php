@@ -17,10 +17,10 @@ echo <<<EOS
 namespace JpHoliday\JpHoliday;
 
 /**
- * Holidays
+ * JpHolidays
  *
  */
-class Holidays
+class JpHolidays
 {
 
     public static \$holidays = array(
